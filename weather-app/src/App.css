@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8; /* Light background for a clean look */
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Weather Search and Result Container */
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+}
+
+/* Search Bar and Button Styling */
+.inputs {
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  padding: 12px;
+  width: 70%;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease; /* Smooth transition for focus */
+}
+
+.inputs input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4); /* Subtle glow effect */
+}
+
+.inputs button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.inputs button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slight grow effect for interaction */
+}
+
+.inputs button:active {
+  transform: scale(1); /* Prevent too much scaling */
+}
+/* Error handling page */
+.errorPage {
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+.errorPage p {
+  font-size: 18px;
+}
+
+/* Weather display styling */
+.weathers {
+  margin-top: 20px;
+}
+
+.cityName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 50px;
+  color: #ff6600;
+}
+
+.climate {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Icons for different weather types */
+img {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Add additional weather details (like wind speed) */
+.humidity, .wind {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Styling for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .inputs input {
+    width: 60%;
+  }
+
+  .inputs button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .weathers {
+    font-size: 14px;
+  }
+}
